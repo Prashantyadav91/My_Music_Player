@@ -92,6 +92,12 @@ ctrlIconChangeRight.addEventListener("click",()=>{
     updatesong();
 });
 
+//for playing the next song automatically
+song.addEventListener("ended",()=>{
+    currSongIndx = (currSongIndx + 1)%songs.length;
+    updatesong();
+});
+
 // for updating the song
 function updatesong(){
     song.src = songs[currSongIndx];
