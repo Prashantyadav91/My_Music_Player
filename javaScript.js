@@ -94,7 +94,7 @@ ctrlIconChangeRight.addEventListener("click",()=>{
 
 //for playing the next song automatically
 song.addEventListener("ended",()=>{
-    currSongIndx = (currSongIndx + 1)%songs.length;
+    currSongIndx = (currSongIndx + 1) % songs.length;
     updatesong();
 });
 
